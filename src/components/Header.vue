@@ -1,13 +1,18 @@
 <template>
   <div class="header-container">
-    <div class="bar" :style="{width: todoCount*60 +'px' }">{{ todoCount }} / {{ maxTodos }}</div>
+    <div class="bar" :style="{width: width() }">{{ todoCount }} / {{ maxTodos }}</div>
   </div>
 </template>
 
 <script>
 export default {
   name: "Header",
-  props: ["todoCount", "maxTodos"]
+  props: ["todoCount", "maxTodos"],
+  methods: {
+    width() {
+      this.todoCount > 0 ? todoCount * 70 + "px" : 50 + "px";
+    }
+  }
 };
 </script>
 

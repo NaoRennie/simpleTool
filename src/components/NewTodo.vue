@@ -3,7 +3,7 @@
     <form>
       <div class="ui list">
         <div class="item">
-          <label>To Do List</label>
+          <label>TO DO LIST</label>
         </div>
         <div class="item">
           <textarea rows="3" v-model="todo"></textarea>
@@ -36,10 +36,16 @@ export default {
 
 <style>
 .container {
+  margin-top: 50px;
   text-align: center;
 }
 textarea {
   width: 500px;
   height: 50px;
+  box-shadow: 10px 5px 5px gray;
+  margin: 30px;
+}
+label {
+  font-size: 40px;
 }
 </style>

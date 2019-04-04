@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      todos: ["sss"],
+      todos: [],
       maxTodos: 10
     };
   },
